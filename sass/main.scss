@@ -1,0 +1,24 @@
+//customize variables
+
+$primary: #001C30;
+$light:#FBF9F1;
+$secondary:#001C30;
+$dark:#ffac27;
+$success:#43766C;
+$info:#0A2647;
+
+//import the function and variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+$custom-theme-colors:(
+  "coldlight":#EEF5FF,
+  "colddark":#27374D,
+  "coldorange":#F6B17A,
+  "coldpurple":#05d197,
+  "color-1":#eef1f5,
+  "color-2":#E94C88,
+);
+ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
